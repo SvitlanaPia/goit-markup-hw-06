@@ -421,7 +421,10 @@ img {
 .footer-container {
   align-items: baseline;
   display: flex;
-  column-gap: 70px;
+}
+.footer-address-block {
+  flex-grow: 1;
+  margin-right: 70px;
 }
 .footer-soc-nets-links {
   fill: var(--white-color);
@@ -494,6 +497,9 @@ img {
 }
 .address-item:not(:last-child) {
   margin-bottom: 9px;
+}
+.footer-social-networks-block {
+  margin-right: 93px;
 }
 .address-link {
   color: var(--white-color);
@@ -595,6 +601,7 @@ img {
   height: 40px;
 }
 .modal-form-message {
+  display: block;
   width: 100%;
   height: 120px;
   resize: none;
@@ -615,12 +622,13 @@ img {
   justify-content: center;
   align-items: center;
   column-gap: 8.38px;
-  padding-left: 12px;
 }
 .modal-form-own-checkbox {
   border: 2px solid var(--primary-text-color);
   border-radius: 2px;
   cursor: pointer;
+  transition: background-color var(--transition-dur-and-func),
+    border-color var(--transition-dur-and-func);
 }
 .modal-form-own-checkbox-icon {
   fill: var(--white-color);
